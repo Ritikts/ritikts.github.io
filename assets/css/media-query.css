@@ -1,0 +1,100 @@
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+
+/* # Disable aos animation delay on mobile devices */
+
+@media screen and (max-width: 48rem) {
+  [data-aos-delay] {
+    -webkit-transition-delay: 0 !important;
+    -o-transition-delay: 0 !important;
+    transition-delay: 0 !important;
+  }
+}
+
+@media (max-width: 85.375rem) {
+  .nav-menu .drop-down .drop-down ul {
+    left: -90%;
+  }
+  .nav-menu .drop-down .drop-down:hover > ul {
+    left: -100%;
+  }
+  .nav-menu .drop-down .drop-down > a:after {
+    content: "\ea9d";
+  }
+}
+
+@media (min-width: 64rem) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 61.938rem) {
+  #hero {
+    height: calc(100vh - 4.5rem);
+  }
+  #hero .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
+@media (max-width: 48rem) {
+  #hero h1 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+  #hero h2 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.875rem;
+  }
+  #hero {
+    margin: 0 0 -4.5rem 0;
+  }
+  #hero {
+    height: 100vh;
+  }
+  .loading,
+  .loading img {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+}
+
+@media (max-width: 61.938rem) {
+  .about .about-img img {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 47.938rem) {
+  .about .about-img img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 35.938rem) {
+  #footer .copyright,
+  #footer .credits {
+    float: none;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    padding: 0.188rem 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}

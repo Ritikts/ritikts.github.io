@@ -1,0 +1,36 @@
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  position: fixed;
+  display: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  right: 0.938rem;
+  bottom: 0.938rem;
+  background: var(--Electric-Indigo);
+  color: var(--White);
+  -webkit-transition: display 0.5s ease-in-out;
+  -o-transition: display 0.5s ease-in-out;
+  transition: display 0.5s ease-in-out;
+  z-index: 9;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.back-to-top:hover {
+  color: var(--White);
+  background: var(--Caribbean-Green);
+  -webkit-transition: background 0.2s ease-in-out;
+  -o-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}

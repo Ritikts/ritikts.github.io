@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 3.75rem 0;
+}
+
+.section-bg {
+  background-color: #6600ff10;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 1.875rem;
+}
+
+.section-title h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 0;
+  line-height: 0.063rem;
+  margin-bottom: 0.938rem;
+  color: var(--Gray36);
+}
+
+.section-title p {
+  padding-bottom: 0.938rem;
+  margin-bottom: 0.938rem;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Electric-Indigo);
+}
+
+.section-title p::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3.75rem;
+  height: 0.125rem;
+  background: var(--Caribbean-Green);
+  bottom: 0;
+  left: calc(50% - 1.875rem);
+}
