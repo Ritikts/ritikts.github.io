@@ -1,0 +1,37 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?343a870e7ed3a87e6bc3829ac716825d") format("truetype"),
+url("./flaticon.woff?343a870e7ed3a87e6bc3829ac716825d") format("woff"),
+url("./flaticon.woff2?343a870e7ed3a87e6bc3829ac716825d") format("woff2"),
+url("./flaticon.eot?343a870e7ed3a87e6bc3829ac716825d#iefix") format("embedded-opentype"),
+url("./flaticon.svg?343a870e7ed3a87e6bc3829ac716825d#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "menu": "\f101",
+    "right-arrow": "\f102",
+    "delete": "\f103",
+);
+
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-delete:before {
+    content: map-get($flaticon-map, "delete");
+}

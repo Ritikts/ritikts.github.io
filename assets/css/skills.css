@@ -1,0 +1,169 @@
+/*--------------------------------------------------------------
+# skillls
+--------------------------------------------------------------*/
+
+.skill-bars {
+  padding: 1.563rem 1.875rem;
+  width: 37.5rem;
+  background: var(--White);
+  border-radius: 0.625rem;
+}
+.skill-bars .bar {
+  margin: 1.25rem 0;
+}
+.skill-bars .bar:first-child {
+  margin-top: 0;
+}
+.skill-bars .bar .info {
+  margin-bottom: 0.313rem;
+}
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 1.063rem;
+  opacity: 0;
+  -webkit-animation: showText 0.5s 1s linear forwards;
+  animation: showText 0.5s 1s linear forwards;
+}
+@-webkit-keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line {
+  height: 0.625rem;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  border-radius: 0.625rem;
+  -webkit-box-shadow: inset 0 0.063rem 0.063rem rgba(0, 0, 0, 0.05),
+    0 0.063rem rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 0.063rem 0.063rem rgba(0, 0, 0, 0.05),
+    0 0.063rem rgba(255, 255, 255, 0.8);
+  -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@-webkit-keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 0.625rem;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  background: var(--Electric-Indigo);
+  -webkit-animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line.html span {
+  width: 90%;
+}
+.bar .progress-line.css span {
+  width: 85%;
+}
+.bar .progress-line.jquery span {
+  width: 65%;
+}
+.bar .progress-line.JavaScript span {
+  width: 75%;
+}
+.bar .progress-line.mysql span {
+  width: 60%;
+}
+.bar .progress-line.figma-adobexd-canva span {
+  width: 85%;
+}
+.bar .progress-line.reactjs span {
+  width: 55%;
+}
+.bar .progress-line.bootstrap span {
+  width: 65%;
+}
+
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  top: -0.625rem;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 0.438rem solid transparent;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-top-color: #000;
+  opacity: 0;
+  -webkit-animation: showText2 0.5s 1.5s linear forwards;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after {
+  position: absolute;
+  top: -1.75rem;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: var(--White);
+  padding: 0.063rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 0.188rem;
+  opacity: 0;
+  -webkit-animation: showText2 0.5s 1.5s linear forwards;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@-webkit-keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line.html span::after {
+  content: "90%";
+}
+.progress-line.css span::after {
+  content: "85%";
+}
+.progress-line.jquery span::after {
+  content: "65%";
+}
+.progress-line.JavaScript span::after {
+  content: "75%";
+}
+.progress-line.mysql span::after {
+  content: "60%";
+}
+.progress-line.figma-adobexd-canva span::after {
+  content: "85%";
+}
+.progress-line.reactjs span::after {
+  content: "55%";
+}
+.progress-line.bootstrap span::after {
+  content: "65%";
+}

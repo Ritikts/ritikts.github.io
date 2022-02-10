@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./favicon/Weather-app.png" />
+  </head>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      -moz-user-select: none;
+      user-select: none; /* Standard syntax */
+    }
+
+    .container {
+      height: 100vh;
+      width: 100vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      color: #fff;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1027%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M1298.184%2c349.794C1339.471%2c352.988%2c1380.665%2c334.364%2c1402.436%2c299.139C1425.295%2c262.152%2c1425.887%2c215.421%2c1404.696%2c177.453C1382.96%2c138.509%2c1342.656%2c108.987%2c1298.184%2c112.348C1257.572%2c115.417%2c1233.388%2c154.706%2c1216.326%2c191.688C1202.369%2c221.94%2c1203.252%2c255.328%2c1218.57%2c284.914C1235.44%2c317.498%2c1261.601%2c346.964%2c1298.184%2c349.794' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1219.0896653773054 511.1541782265865L1223.936923970533 603.6453820047235 1316.4281277486698 598.7981234114961 1311.5808691554425 506.3069196333591z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M200.434%2c426.415C232.154%2c423.867%2c253.824%2c397%2c268.198%2c368.609C280.975%2c343.372%2c283.899%2c313.961%2c269.779%2c289.45C255.636%2c264.9%2c228.766%2c251.122%2c200.434%2c250.979C171.839%2c250.834%2c146.077%2c265.187%2c129.865%2c288.742C110.731%2c316.542%2c95.375%2c351.222%2c110.769%2c381.254C127.13%2c413.173%2c164.681%2c429.287%2c200.434%2c426.415' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M896.908879870011 557.6582901732517L972.357295055037 502.84180787072484 917.5408127525101 427.39339268569887 842.0923975674841 482.2098749882257z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M442.8852574070721 217.1830344178726L334.29569939390024 250.38219398853437 367.494858964562 358.97175200170625 476.0844169777339 325.7725924310445z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1264.167809834253 49.060860980359195L1346.2079018092322 185.5985027844666 1482.7455436133396 103.55841080948726 1400.7054516383603-32.97923099462015z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1027'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    .weather {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 0.938rem 0;
+      font-size: 1.5rem;
+    }
+
+    #location {
+      font-size: 3rem;
+      font-weight: 800;
+      font-style: italic;
+    }
+    .desc {
+      font-size: 1.25rem;
+      text-transform: capitalize;
+    }
+
+    .circle {
+      background-color: #fff;
+      border-radius: 3.125rem;
+      height: 0.938rem;
+      width: 0.938rem;
+      margin: 0 0.938rem;
+    }
+
+    .info h4 {
+      margin: 0.313rem;
+    }
+  </style>
+  <body oncontextmenu="return false">
+    <div class="container">
+      <img src="" alt="" srcset="" id="weather-icon" />
+      <div id="location">Unable to Fetch Weather</div>
+      <div class="desc">No Information Available.</div>
+      <div class="weather">
+        <div class="c">Error</div>
+        <div class="circle"></div>
+        <div class="f">Error</div>
+      </div>
+      <div class="info">
+        <h4>
+          Sunrise :&ensp;
+          <span class="sunrise">No Information Available</span>
+        </h4>
+        <h4>
+          Sunset :&ensp; <span class="sunset">No Information Available</span>
+        </h4>
+      </div>
+    </div>
+    <script>
+      const api = "2b1bcdbde4fc876297e02d803b40e84c";
+
+      const iconImg = document.getElementById("weather-icon");
+      const loc = document.querySelector("#location");
+      const tempC = document.querySelector(".c");
+      const tempF = document.querySelector(".f");
+      const desc = document.querySelector(".desc");
+      const sunriseDOM = document.querySelector(".sunrise");
+      const sunsetDOM = document.querySelector(".sunset");
+
+      window.addEventListener("load", () => {
+        let long;
+        let lat;
+        // Accesing Geolocation of User
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition((position) => {
+            // Storing Longitude and Latitude in variables
+            long = position.coords.longitude;
+            lat = position.coords.latitude;
+            const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=metric`;
+
+            // Using fetch to get data
+            fetch(base)
+              .then((response) => {
+                return response.json();
+              })
+              .then((data) => {
+                const { temp, feels_like } = data.main;
+                const place = data.name;
+                const { description, icon } = data.weather[0];
+                const { sunrise, sunset } = data.sys;
+
+                const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+                const fahrenheit = (temp * 9) / 5 + 32;
+
+                // Converting Epoch(Unix) time to GMT
+                const sunriseGMT = new Date(sunrise * 1000);
+                const sunsetGMT = new Date(sunset * 1000);
+
+                // Interacting with DOM to show data
+                iconImg.src = iconUrl;
+                loc.textContent = `${place}`;
+                desc.textContent = `${description}`;
+                tempC.textContent = `${temp.toFixed(2)} °C`;
+                tempF.textContent = `${fahrenheit.toFixed(2)} °F`;
+                sunriseDOM.textContent = `${sunriseGMT.toLocaleDateString()}, ${sunriseGMT.toLocaleTimeString()}`;
+                sunsetDOM.textContent = `${sunsetGMT.toLocaleDateString()}, ${sunsetGMT.toLocaleTimeString()}`;
+              });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

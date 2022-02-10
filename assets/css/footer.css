@@ -1,0 +1,143 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 0 0 1.875rem 0;
+  color: var(--Blue-Charcoal);
+  font-size: 0.875rem;
+  background: #6600ff10;
+}
+
+#footer .footer-top {
+  padding: 3.75rem 0 1.875rem 0;
+  background: var(--White);
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 1.875rem;
+}
+
+#footer .footer-top .footer-contact h4 {
+  font-size: 1.375rem;
+  margin: 0 0 1.875rem 0;
+  padding: 0.125rem 0 0.125rem 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+  color: var(--Gray36);
+}
+
+#footer .footer-top h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--Blue-Charcoal);
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 1.875rem;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 0.125rem;
+  color: var(--Caribbean-Green);
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 0.625rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: var(--Gray36);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: var(--Electric-Indigo);
+}
+
+#footer .footer-top .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 1.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: var(--Electric-Indigo);
+  color: var(--White);
+  line-height: 1;
+  padding: 0.5rem 0;
+  margin-right: 0.25rem;
+  border-radius: 50%;
+  width: 2.25rem;
+  height: 2.25rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: var(--Caribbean-Green);
+  color: var(--White);
+  text-decoration: none;
+}
+
+#footer .copyright {
+  text-align: center;
+  float: left;
+}
+
+#footer .credits {
+  float: right;
+  text-align: center;
+  font-size: 0.813rem;
+  font-weight: bold;
+  color: var(--Gray36);
+  text-decoration: none;
+}
+
+#footer .credits a {
+  color: var(--Electric-Indigo);
+}

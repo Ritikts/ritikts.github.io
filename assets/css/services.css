@@ -1,0 +1,53 @@
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+#services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.services .icon-box {
+  padding: 1.875rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 2.5rem 0;
+  background: var(--White);
+  -webkit-box-shadow: 0 0.625rem 1.813rem 0 rgba(68, 88, 144, 0.1);
+  box-shadow: 0 0.625rem 1.813rem 0 rgba(68, 88, 144, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.938rem;
+  text-align: center;
+  border-bottom: 0.188rem solid var(--White);
+}
+
+.services .icon-box:hover {
+  -webkit-transform: translateY(-0.313rem);
+  -ms-transform: translateY(-0.313rem);
+  transform: translateY(-0.313rem);
+  border-color: var(--Electric-Indigo);
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 0.938rem;
+  font-size: 1.125rem;
+}
+
+.services .title a {
+  color: var(--Blue-Charcoal);
+}
+
+.services .description {
+  font-size: 0.938rem;
+  line-height: 1.75rem;
+  margin-bottom: 0;
+}

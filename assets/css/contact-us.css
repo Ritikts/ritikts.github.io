@@ -1,0 +1,85 @@
+/*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+.contact .info {
+  border-top: 0.188rem solid var(--Electric-Indigo);
+  border-bottom: 0.188rem solid var(--Electric-Indigo);
+  padding: 1.875rem;
+  background: var(--White);
+  width: 100%;
+  -webkit-box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info h4 {
+  padding: 0 0 0 3.75rem;
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 0.313rem;
+  color: var(--Blue-Charcoal);
+}
+
+.contact .info p {
+  padding: 0 0 0.625rem 3.75rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  color: var(--Gray36);
+}
+
+.contact .info .email p {
+  padding-top: 0.313rem;
+}
+
+.contact .info .social-links {
+  padding-left: 3.75rem;
+}
+
+.contact .info .social-links a:hover {
+  background: var(--Electric-Indigo);
+  color: var(--White);
+}
+
+.contact .myForm {
+  width: 100%;
+  border-top: 0.188rem solid var(--Electric-Indigo);
+  border-bottom: 0.188rem solid var(--Electric-Indigo);
+  padding: 1.875rem;
+  background: var(--White);
+  -webkit-box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .myForm .form-group {
+  padding-bottom: 0.5rem;
+}
+
+.contact .myForm input,
+.contact .myForm textarea {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 0.875rem;
+}
+
+.contact .myForm input {
+  height: 2.75rem;
+}
+
+.contact .myForm textarea {
+  padding: 0.625rem 0.75rem;
+}
+
+.contact .myForm button[type="submit"] {
+  background: var(--Electric-Indigo);
+  border: 0;
+  padding: 0.625rem 1.5rem;
+  color: var(--White);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 0.25rem;
+}
+
+.contact .myForm button[type="submit"]:hover {
+  background: var(--Caribbean-Green);
+}
